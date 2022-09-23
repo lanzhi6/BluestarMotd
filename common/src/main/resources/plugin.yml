@@ -1,0 +1,6 @@
+name: BluestarMotd
+version: '${project.version}'
+main: me.lanzhi.bluestarmotd.BluestarMotdPlugin
+api-version: 1.13
+softdepend:
+  - PlaceholderAPI

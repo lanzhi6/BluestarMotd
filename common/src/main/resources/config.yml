@@ -1,0 +1,49 @@
+motd:
+  #支持RGB颜色和渐变色以及PlaceholderAPI
+  #Support RGB colors and gradients and PlaceholderAPI
+  - line1: '#<random>-<random><欢迎使用BluestarMotd TPS:%server_tps_1%>'
+    line2: '#<random>-<random><请在config.yml中进行配置>'
+  - line1: '#<random>-<random><Welcome to use BluestarMotd TPS:%server_tps_1%>'
+    line2: '#<random>-<random><Please configure in config.yml>'
+  - line1: '#ABCDEFRGB_RGB_RGB_RGB_RGB_RGB_RGB'
+    line2: '#<random>randomRGB_randomRGB_randomRGB'
+  - line1: '#123456-ABCDEF<gradients_gradients_gradients>'
+    line2: '#123456-<random><randomGradients_randomGradients>'
+
+#在icon文件夹中随机选择图标
+#Randomly select icons in icon folder
+icon: true
+
+#显示自定义的版本信息(会导致客户端显示版本不支持,但能正常进入服务器)
+#Display the customized version message
+# (it will cause the client to display the unsupported version,but it can enter the server normally)
+useCustomVersionMessage: true
+
+#支持PlaceholderAPI
+#Supports Placeholder API
+customVersionMessage:
+  - '&d&lJoin! &6&l[&c&l%online%&6&l/&c&l%max%&6&l]'
+  - '&d&l欢迎加入服务器! &6&l[&c&l%online%&6&l/&c&l%max%&6&l]'
+
+player:
+  #在原基础上加减乘除:'+10' '-10' '*10' '/10',设置为10:'=10',关闭此功能:''
+  #Add, subtract, multiply and divide on the original basis:'+10' '-10' '*10' '/10'
+  #Set to 10:'=10' Turn off this function:''
+  online: '+30'
+  max: '=-20'
+
+  #玩家列表的模式,info:显示自定义信息,add:向在线玩家列表添加假玩家,set:将在线玩家列表设置为假玩家列表
+  #Mode of player list.info:display custom information,add:Add fake players to online player list
+  #set:Set online player list as fake player list
+  playerListMode: 'info'
+
+  #玩家列表最大显示行数
+  #Maximum number of lines displayed in player list
+  playerListMaxLines: 10
+
+  #自定义信息或假玩家,支持PlaceholderAPI
+  #Customized information or fake players,Supports Placeholder API
+  playerList:
+    - "&4&lOnline: &6&l[&c&l%online%&6&l/&c&l%max%&6&l]"
+    - "&d&l感谢使用BluestarMotd"
+    - "&d&lThanks for using BluestarMotd"
